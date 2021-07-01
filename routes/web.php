@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::resource('user','users');
 
-Route::resource('product','productControler');
+Route::resource('product','productControler')->middleware('checkAuth');
 
  
 
